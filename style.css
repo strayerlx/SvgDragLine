@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#app {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    min-height: 800px;
+    user-select: none;
+}
+
+.temp_drag_dv1 {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(31, 35, 36);
+    z-index: 5;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.temp_line_dv1{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background-color: red;
+    z-index: 0;
+    opacity: 0;
+}
+
+/* =============================================================== */
+
+.Comp_Box {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(49, 54, 56);
+    border-right: 10px rgb(44, 48, 51) solid;
+    z-index: 2;
+    color: rgb(236, 237, 236);
+}
+
+.Comp_Box_Title {
+    width: 100%;
+    height: 30px;
+    padding: 20px 10px 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Comp_Box div {
+    padding: 10px 10px 0;
+    border-top: 1px rgb(34, 38, 40) solid;
+    line-height: 16px;
+    font-size: 16px;
+    height: 30px;
+}
+
+.Comp_Box div:hover {
+    background-color: rgb(24, 27, 28);
+    cursor: pointer;
+}
+
+/* =============================================================== */
+
+.Canvas_Box {
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(49, 54, 56);
+}
+
+.canvas_dom {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(31, 35, 36);
+    z-index: 5;
+    text-align: center;
+    color: white;
+}
+
+.canvas_dom p {
+    margin-top: 4px;
+}
+
+.canvas_dom p:hover {
+    cursor: all-scroll;
+}
+
+.canvas_dom .canvas_button_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.canvas_dom .canvas_button_in:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 7px;
+    top: 33px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.canvas_dom .canvas_button_out:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 7px;
+    top: 33px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.canvas_dom .canvas_button_in {
+    width: 50%;
+    cursor: pointer;
+}
+
+.canvas_dom .canvas_button_out {
+    width: 50%;
+    cursor: pointer;
+}
